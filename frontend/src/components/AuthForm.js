@@ -17,6 +17,7 @@ function AuthForm() {
         {data && data.errors && (
           <ul>
             {Object.values(data.errors).map((err) => (
+
               <li key={err}>{err}</li>
             ))}
           </ul>
