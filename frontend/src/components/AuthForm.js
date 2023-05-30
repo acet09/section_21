@@ -16,7 +16,8 @@ function AuthForm() {
         <h1>{isLogin ? 'Log in' : 'Create a new user'}</h1>
         {data && data.errors && (
           <ul>
-            {Object.values(data.errors).map(err => (
+            {Object.values(data.errors).map((err) => (
+
               <li key={err}>{err}</li>
             ))}
           </ul>
